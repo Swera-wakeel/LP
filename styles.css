@@ -1,0 +1,80 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    padding: 15px 20px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-item:hover a {
+    color: #00bfff;
+}
+
+.scrolled .navbar {
+    background-color: #444;
+}
+
+.content {
+    padding-top: 60px; /* To account for fixed navbar height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+section {
+    padding: 60px;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#home {
+    background-color: #e3f2fd; /* Light blue */
+}
+
+#about {
+    background-color: #ffebee; /* Light red */
+}
+
+#services {
+    background-color: #e8f5e9; /* Light green */
+}
+
+#contact {
+    background-color: #fff3e0; /* Light orange */
+}
